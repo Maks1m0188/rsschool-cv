@@ -1,1 +1,148 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Maksim Kutsko</title>
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="container container-nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-button button" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-button button" href="#about-me-skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-button button" href="#about-me-code">Code example</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-button button" href="#about-me-education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-button button" href="#about-me-languages">Languages</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+      <div class="container container-header">
+        <div class="head-info">
+          <span class="head-info-name">
+            <h1>Maksim Kutsko</h1>
+            <p>Junior Front-End Developer</p>
+          </span>
+          <div class="img-main">
+            <div class="img-photo">
+              <img src="./assets/img/main-photo.jpg" alt="My Photo">
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container container-main">
+      <section class="about-me" id="about-me">
+        <div class="about-me-info">
+          <h2 class="section-head about-me-head">About me</h2>
+          <p class="section-description about-me-description">
+            25 years old, I work in a large online hypermarket in Belarus. Back in school, while going through basic HTML lessons, I got hooked on the process when characters come to life in pictures and processes. I decided to start learning programming languages ​​on my own from scratch. I like to study what is really interesting. I walk with the motto in life "nothing is impossible".
+          </p>
+        </div>
+        <div class="about-me-skills" id="about-me-skills">
+          <h2 class="section-head about-me-skills-head">Skills</h2>
+          <ul class="skills-list">
+            <li class="skills-item">
+              HTML (basic)
+            </li>
+            <li class="skills-item">
+              CSS (basic)
+            </li>
+            <li class="skills-item">
+              JS (basic)
+            </li>
+            <li class="skills-item">
+              Photoshop
+            </li>
+          </ul>
+        </div>
+        <div class="about-me-code" id="about-me-code">
+          <h2 class="section-head about-me-code-head">Code example</h2>
+          <pre>
+function findOutlier(integers){
+  let odd = [];
+  let even = [];
+  for (let int of integers) {
+    if (int % 2 === 0) {
+      even.push(int);  
+    };
+    else {
+    odd.push(int);
+    };
+  };
+  if (odd.length > even.length) {
+    return parseInt(even.join());
+  };
+  else {
+    return parseInt(odd.join());
+};
+          </pre>
+        </div>
+        <div class="about-me-education" id="about-me-education">
+          <h2 class="section-head about-me-education-head">Education</h2>
+          <p class="section-description about-me-education-description">
+            <span class="education-name">Russian Economic University</span><br>
+            <span class="education-profile">Department of customs</span><br>
+            <span class="education-since">Sept 2016 - jul 2021 - 5 years, Smolensk</span>
+          </p>
+        </div>
+        <div class="about-me-languages" id="about-me-languages">
+          <h2 class="section-head about-me-languages-head">English</h2>
+          <div class="english-level">
+            <span class="languages-item-text">A2 - Elementary</span>
+            <span class="languages-level-img-true"></span>
+            <span class="languages-level-img-true lang-level"></span>
+            <span class="languages-level-img-false"></span>
+            <span class="languages-level-img-false"></span>
+            <span class="languages-level-img-false"></span>
+            <span class="languages-level-img-false"></span>
+          </div>
+        </div>
+      </section>
+      <section class="contact-info">
+        <h2 class="section-head contact-info-head">Contact info</h2>
+        <ul class="contact-info-list">
+          <li class="contact-info-item">
+            <a class="contact-info-link tel-number-link" href="tel:375333558333">+375 33 355 83 33</a>
+          </li>
+          <li class="contact-info-item">
+            <a class="contact-info-link mail-link" href="mailto:3558333@mail.ru">3558333@mail.ru</a>
+          </li>
+          <li class="contact-info-item">
+            <a class="contact-info-link telegram-link" href="https://t.me/m4ks1q">@m4ks1q</a>
+          </li>
+          <li class="contact-info-item">
+            <a class="contact-info-link discord-link" href="https://discordapp.com/users/956118431516753930/">Maks1m#0188</a>
+          </li>
+          <li class="contact-info-item">
+            <a class="contact-info-link github-link" href="https://github.com/Maks1m0188">@Maks1m0188</a>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-github">
+        <span class="github-logo"><a class="footer-github-link" href="https://github.com/Maks1m0188">Maks1m0188</a></span>
+        <span class="github-year">@2022</span>
+      </div>
+      <a class="footer-rss-link" href="https://app.rs.school/"><img src="./assets/img/logo-rsschool.png" alt="RSScool Logo"></a>
+    </div>
+  </footer>    
+</body>
+</html>
