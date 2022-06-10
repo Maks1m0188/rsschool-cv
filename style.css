@@ -3,6 +3,10 @@
    src: url("./assets/fonts/Montserrat-VariableFont_wght.ttf");
 }
 
+html {
+  scroll-behavior: smooth; 
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -63,6 +67,12 @@ a {
 
 .nav-button {
   color: white;
+  transition: .3s ease-in-out;
+}
+
+.nav-button:hover {
+  opacity: .9;
+  text-shadow: 0px 6px 6px rgba(255, 255, 255, 1);
 }
 
 .head-info {
@@ -138,6 +148,7 @@ a {
 .about-me-code pre {
   display: inline-block;
   padding: 20px;
+  margin: 0;
   background-color: rgba(217, 217, 217, 0.3);
   border: 1px black solid;
   border-radius: 10px;
@@ -202,6 +213,11 @@ a {
 .contact-info-link {
   font-weight: 600;
   color: #73808D;
+  transition: .3s ease-in-out;
+}
+
+.contact-info-link:hover {
+  color: #101214;
 }
 
 .contact-info-link::before {
@@ -259,6 +275,12 @@ a {
   margin-right: 15px;
   font-size: 18px;
   color: white;
+  transition: .3s ease-in-out;
+}
+
+.footer-github-link:hover {
+  opacity: .9;
+  text-shadow: 0px 4px 4px rgba(255, 255, 255, 1);
 }
 
 .footer-github-link::before {
