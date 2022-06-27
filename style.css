@@ -229,16 +229,6 @@ a {
   transform: translateY(4px);
 }
 
-.tel-number-link::before {
-  background: url(./assets/svg/phone-svg.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
-.mail-link::before {
-  background: url(./assets/svg/email-svg.svg) no-repeat;
-  background-size: 100% 100%;
-}
-
 .telegram-link::before {
   background: url(./assets/svg/telegram-svg.svg) no-repeat;
   background-size: 100% 100%;
